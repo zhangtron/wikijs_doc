@@ -1,0 +1,522 @@
+<!--
+title: 基础知识
+description: 入门
+published: true
+date: 2023-01-07T15:30:32.673Z
+tags: python
+editor: ckeditor
+dateCreated: 2023-01-07T15:30:28.948Z
+-->
+
+<h1>1.格式化符号</h1>
+<figure class="table" style="width:750px;">
+  <table style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">格式符号</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">转换</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%c</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">字符</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%s</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">通过str() 字符串转换来格式化</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%i</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">有符号十进制整数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%d</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">有符号十进制整数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%u</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">无符号十进制整数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%o</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">八进制整数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%x</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">十六进制整数（小写字母）</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%X</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">十六进制整数（大写字母）</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%e</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">索引符号（小写'e'）</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%E</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">索引符号（大写“E”）</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%f</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">浮点实数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%g</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">％f和％e 的简写</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">%G</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">％f和％E的简写</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<p>age = 18
+  name = "xiaohua"
+  print("我的姓名是%s,年龄是%d"%(name,age))
+  #我的姓名是xiaohua,年龄是18</p>
+<h1>2.input()</h1>
+<p>a = input()
+  # 控制台输入"呵呵",转换成字符串
+  print(a)
+
+  #python2输出字符串
+  raw_input()</p>
+<p>&nbsp;</p>
+<h1>3.运算符</h1>
+<ul>
+  <li>算数运算符</li>
+</ul>
+<figure class="table" style="width:476px;">
+  <table style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">运算符</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">描述</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">实例</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">+</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">加</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">两个对象相加 a + b 输出结果 30</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">-</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">减</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">得到负数或是一个数减去另一个数 a - b 输出结果 -10</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">*</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">乘</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">两个数相乘或是返回一个被重复若干次的字符串 a * b 输出结果 200</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">/</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">除</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">x除以y b / a 输出结果 2</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">//</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">取整除</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">返回商的整数部分 9//2 输出结果 4 , 9.0//2.0 输出结果 4.0</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">%</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">取余</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">返回除法的余数 b % a 输出结果 0</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">**</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">幂</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">返回x的y次幂 a**b 为10的20次方， 输出结果 100000000000000000000</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<ul>
+  <li>赋值运算符</li>
+</ul>
+<figure class="table" style="width:742px;">
+  <table style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">运算符</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">描述</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">实例</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">把=号右边的结果给左边的变量 num=1+2*3 结果num的值为7</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<ul>
+  <li>复合运算符</li>
+</ul>
+<figure class="table" style="width:750px;">
+  <table style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">运算符</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">描述</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">实例</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">+=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">加法赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">c += a 等效于 c = c + a</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">-=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">减法赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">c -= a 等效于 c = c - a</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">*=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">乘法赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">c *= a 等效于 c = c * a</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">/=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">除法赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">c /= a 等效于 c = c / a</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">%=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">取模赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">c %= a 等效于 c = c % a</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">**=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">幂赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">c **= a 等效于 c = c ** a</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">//=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">取整除赋值运算符</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">c //= a 等效于 c = c // a</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1>3.数据类型转换</h1>
+<figure class="table" style="width:738px;">
+  <table style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">函数</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">说明</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">int(x [,base ])</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将x转换为一个整数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">long(x [,base ])</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将x转换为一个长整数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">float(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将x转换到一个浮点数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">complex(real [,imag ])</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">创建一个复数</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">str(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将对象 x 转换为字符串</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">repr(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将对象 x 转换为表达式字符串</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">eval(str )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">用来计算在字符串中的有效Python表达式,并返回一个对象</p>
+          <p style="text-align:center;">（去掉引号字符串转lambda,list等转换之前的格式）</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">tuple(s )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将序列 s 转换为一个元组</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">list(s )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将序列 s 转换为一个列表</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">chr(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将一个整数转换为一个字符</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">unichr(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将一个整数转换为Unicode字符</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">ord(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将一个字符转换为它的整数值</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">hex(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将一个整数转换为一个十六进制字符串</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">oct(x )</p>
+        </td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+          <p style="text-align:center;">将一个整数转换为一个八进制字符串</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<h1>4.if语句</h1>
+<p>age = 16
+
+  print("------if判断开始------")
+
+  if age &gt;= 18:
+  &nbsp; &nbsp;print("我已经成年了")
+  else:
+  &nbsp; &nbsp;print("未成年")
+
+  print("------if判断结束------")
+  '''
+  ------if判断开始------
+  未成年
+  ------if判断结束------
+  '''</p>
+<h1>5.比较、关系运算符</h1>
+<ul>
+  <li>比较运算符</li>
+</ul>
+<figure class="table" style="width:774px;">
+  <table style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">运算符</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">描述</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">示例</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">==</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">检查两个操作数的值是否相等，如果是则条件变为真。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">如a=3,b=3则（a == b) 为 true.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">!=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">检查两个操作数的值是否相等，如果值不相等，则条件变为真。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">如a=1,b=3则(a != b) 为 true.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">&lt;&gt;</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">检查两个操作数的值是否相等，如果值不相等，则条件变为真。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">如a=1,b=3则(a &lt;&gt; b) 为 true。这个类似于 != 运算符</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">&gt;</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">检查左操作数的值是否大于右操作数的值，如果是，则条件成立。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">如a=7,b=3则(a &gt; b) 为 true.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">&lt;</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">检查左操作数的值是否小于右操作数的值，如果是，则条件成立。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">如a=7,b=3则(a &lt; b) 为 false.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">&gt;=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">检查左操作数的值是否大于或等于右操作数的值，如果是，则条件成立。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">如a=3,b=3则(a &gt;= b) 为 true.</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">&lt;=</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">检查左操作数的值是否小于或等于右操作数的值，如果是，则条件成立。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">如a=3,b=3则(a &lt;= b) 为 true.</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+<ul>
+  <li>逻辑运算符</li>
+</ul>
+<figure class="table" style="width:745px;">
+  <table style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">
+    <tbody>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">运算符</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">逻辑表达式</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">描述</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">实例</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">and</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">x and y</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">布尔"与" - 如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">(a and b) 返回 20。</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">or</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">x or y</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">布尔"或" - 如果 x 是 True，它返回 True，否则它返回 y 的计算值。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">(a or b) 返回 10。</td>
+      </tr>
+      <tr>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">not</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">not x</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">布尔"非" - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td>
+        <td style="border-bottom:1px solid #d9d9d9;border-left:1px solid #d9d9d9;border-right:1px solid #d9d9d9;border-top:1px solid #d9d9d9;">not(a and b) 返回 False</td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
