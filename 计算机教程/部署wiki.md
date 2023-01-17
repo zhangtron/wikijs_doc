@@ -2,11 +2,22 @@
 title: 部署wiki.js
 description: 部署自己的知识库
 published: true
-date: 2023-01-17T15:28:12.003Z
+date: 2023-01-17T15:31:25.607Z
 tags: 计算机教程, 部署wiki
 editor: markdown
 dateCreated: 2023-01-06T13:13:11.809Z
 ---
+
+# 白嫖一个服务器
+## 申请双币支付信用卡
+## 申请服务器免费试用
+当前支持谷歌、微软、甲骨文和亚马逊，一个公司白嫖一年，那就是免费试用四年哈哈！
+
+# 部署wikijs
+
+参考：
+https://docs.requarks.io/dev/themes
+
 
 # 反向代理
 
