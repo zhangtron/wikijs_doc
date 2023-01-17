@@ -1,8 +1,8 @@
 ---
-title: 知识库的诞生
+title: 部署wiki.js知识库
 description: 部署自己的知识库
 published: true
-date: 2023-01-17T15:31:46.646Z
+date: 2023-01-17T15:32:52.747Z
 tags: 计算机教程, 部署wiki
 editor: markdown
 dateCreated: 2023-01-06T13:13:11.809Z
