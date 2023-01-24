@@ -1,3 +1,13 @@
+---
+title: Cerebro源码解读
+description: 来源：https://blog.csdn.net/h00cker?type=blog
+published: true
+date: 2023-01-24T08:09:22.545Z
+tags: 交易, backtrader, 源码解读
+editor: markdown
+dateCreated: 2023-01-24T07:41:09.950Z
+---
+
 前面两篇文章已经一步一步展示了如何使用backtrader以及使用backtrader的一些重要概念和注意事项。但是你要真正灵活地使用backtrader实现自己的策略，还需要了解backtrader各个组成部分。本文开始，对backtrader的类进行详细的说明。为了让大家更能深入了解backtrader的运行机制，咱们基于源代码进行解读。
 
 代码架构中，会用到元类，我们先了解元类在backtrader中的应用。
